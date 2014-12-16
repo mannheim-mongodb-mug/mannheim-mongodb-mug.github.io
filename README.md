@@ -7,7 +7,7 @@ mannheim-mongodb-mug.github.io webpage
 
 ```sh
 git clone http://github.com/mannheim-mongodb-mug/mannheim-mongodb-mug.git ./
-node install && bower install
+npm install && bower install
 grunt serve --force
 ```
 Now Open browser: http//localhost:9000/
