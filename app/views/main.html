@@ -1,38 +1,15 @@
-<!--
-<div class="container">
-  <div class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="pull-right">
-        <p>
-
-        </p>
-        <a href="/#/contact">Contact</a>
-      </div>
-    </div>
-  </div>
-</div> -->
-
-
-<h3>Welcome to MongoDB Mannheim</h3>
-
-<div>
-  <p>
-
-  </p>
-  <div id="name">
-  <script>
-  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-  </script>
+<div class="well">
+  <h4>What is MongoDB?</h4> MongoDB ("humongous") is a free, high-performance open-source, cross-platform, schema less database (noSQL) storing JSON-like documents.
 </div>
-<a href="https://twitter.com/mongodbmannheim" class="twitter-follow-button" data-show-count="false" data-size="large" data-dnt="true">Follow @mongodbmannheim</a>
+
+<div class="well">
+  <h4>Our Goals?</h4> Exchange of ideas and expertise, help new users. Build up and curate a strong, open mongoDB user community in the Rhine-Neckar area. Maybe world domination.
 </div>
-<p>
 
-</p>
-<div>
-
-  <a href="http://www.meetup.com/Mannheim-MongoDB-User-Group/" target="_new">
-    <img src="images/meetup-logo.png" style="width:50px;" alt="" /> Meetup user group
-  </a>
-
+<div class="well">
+  <h4>When? Where?</h4> First Thuesday every month, OPOTOC GmbH, O7, Mannheim
+  <b>
+  <p style="margin-top:10px;" class="bg-info" ng-controller="NextDateCtrl as Next">
+    Next: {{Next.nextDate | date:'dd.MM.yyyy - HH.mm'}}</p>
+</b>
 </div>

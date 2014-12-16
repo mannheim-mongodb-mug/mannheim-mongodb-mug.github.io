@@ -2,12 +2,34 @@
 body {
   padding-top: 40px;
   padding-bottom: 20px;
-  background-image: url("/images/mongodb.jpg");
+  background-image: url("/images/background1-unscharf4.png");
   background-repeat: no-repeat;
   /*background-width: 30% 20%;*/
   /*background-position: right;*/
   /*background-size: contain;*/
   filter: alpha(opacity=30);
+  background-color:#70b25d;
+}
+
+a {
+  color: #cfcfcf;
+}
+
+a:hover{
+  text-decoration:none;
+}
+
+.bg-primary, .bg-success, .bg-info {
+  padding:5px;
+}
+
+.navbar {
+  background-color:#757140;
+}
+
+.navbar-text {
+  color: #ffffff;
+  /*background-color: #ffffff;*/
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -26,7 +48,7 @@ body {
 .header h3 {
   margin-top: 0;
   margin-bottom: 0;
-  line-height: 40px;
+  /*line-height: 40px;*/
   padding-bottom: 19px;
 }
 
@@ -34,7 +56,7 @@ body {
 .footer {
   padding-top: 19px;
   color: #777;
-  
+
 }
 
 /* Customize container */
@@ -45,24 +67,6 @@ body {
 }
 .container-narrow > hr {
   margin: 30px 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: right;
-  border-bottom: 1px solid #e5e5e5;
-}
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
-}
-
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-}
-.marketing p + h4 {
-  margin-top: 28px;
 }
 
 /* Responsive: Portrait tablets and up */

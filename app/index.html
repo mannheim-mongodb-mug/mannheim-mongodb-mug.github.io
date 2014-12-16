@@ -1,73 +1,96 @@
 <!doctype html>
 <html class="no-js">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-  </head>
-  <body ng-app="mannheimMongodbMuggithubioApp">
-    <!--[if lt IE 7]>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+</head>
+
+<body ng-app="mannheimMongodbMuggithubioApp">
+  <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <!-- Add your site or application content here -->
-    <div class="container" id="content">
+  <!-- Add your site or application content here -->
+  <div class="container" id="content">
 
-      <!-- <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a ng-href="#">Home</a></li>
-          <li><a ng-href="#/about">About</a></li>
-          <li><a ng-href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">MongoDB @ Mannheim</h3>
+    <nav class="navbar navbar-default navbar-inverse " role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <img src="images/mongodb-logo2.png" style="width:10px;">
+          </a>
+        </div>
+        <p class="navbar-text"><h3>Welcome to MongoDB Mannheim</h3></p>
       </div>
-      -->
+    </nav>
 
-      <div ng-view=""></div>
+    <div class="row">
 
-      <div class="footer">
-        <!-- <a href="#">Impressum</a>|
-        <a href="#">Contact</a> -->
+      <div class="col-md-9">
+        <div ng-view=""></div>
+      </div>
+      <div class="col-md-3">
+        <div class="pull-right">
+          <h4><a href="http://www.meetup.com/Mannheim-MongoDB-User-Group/" target="_new">
+              <img src="images/meetup-logo.png" style="width:50px;" alt="" /> Meetup user group
+            </a>
+          </h4>
+          <twitter-timeline></twitter-timeline>
+        </div>
+
       </div>
     </div>
 
 
-    <!-- build:js(.) scripts/oldieshim.js -->
-    <!--[if lt IE 9]>
+    <div class="footer">
+      <!-- <a href="#">Impressum</a>|
+        <a href="#">Contact</a> -->
+    </div>
+  </div>
+
+
+  <!-- build:js(.) scripts/oldieshim.js -->
+  <!--[if lt IE 9]>
     <script src="bower_components/es5-shim/es5-shim.js"></script>
     <script src="bower_components/json3/lib/json3.js"></script>
     <![endif]-->
-    <!-- endbuild -->
+  <!-- endbuild -->
 
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-    <script src="bower_components/angular-messages/angular-messages.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-touch/angular-touch.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+  <!-- build:js(.) scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+  <script src="bower_components/angular-messages/angular-messages.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <script src="bower_components/angular-touch/angular-touch.js"></script>
+  <script src="bower_components/moment/moment.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
-        <!-- endbuild -->
+  <!-- build:js({.tmp,app}) scripts/scripts.js -->
+  <script src="scripts/app.js"></script>
+  <script src="scripts/controllers/main.js"></script>
+  <script src="scripts/controllers/about.js"></script>
+  <script src="scripts/directives/twittertimeline.js"></script>
+  <script src="scripts/controllers/nextdate.js"></script>
+  <!-- endbuild -->
 </body>
+
 </html>
